@@ -1,0 +1,76 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+body{
+    display: flex;
+    background: url(laptop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    min-height: 100vh;
+
+}
+.form{
+    display: flexbox;
+    background-color: black;
+    border-radius: 30px;
+    opacity: 0.8;
+    align-items: center;
+    width: 400px;
+    height: 300px;
+    margin: auto;
+    padding-block:80px;
+    padding-left: 30px;
+
+}
+#summit{
+    display: flex;
+    margin-left:145px;
+    margin-top: 50px;
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-size: larger;
+
+    
+}
+#summit:hover{
+    background-color: greenyellow;
+}
+.feed{
+    display: block;
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+
+}
+
+.feed input{
+    width: 200px;
+    height: 40px;
+}
+
+.rating div{
+    color: #ffe400;
+    font-size: 30px;
+    
+    
+
+}
+.rating input{
+    display: none; 
+}
+.rating input + label{
+    font-size: 50px;
+    text-shadow: 1px 1px 0 #ffe400;
+}
+.rating input:checked + label~label{
+    color: #838383;
+}
+.rating label:active{
+    transform: scale(0.8);
+    transition: 0.3s ease;
+}

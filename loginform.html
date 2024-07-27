@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARTHA TECHNOLOGY</title>
+    <link rel="icon" href="project-management.png">
+    <link rel="stylesheet" href="loginform.css">
+    <script src="loginform.js"></script>
+</head>
+<body>
+    <h1>LOGIN</h1>
+    <div class="container">
+        <form action="mainpage.html">
+            <label for="name">Username</label>
+            <input type="text" id="name" name="name" required placeholder="Enter user name"><br><br>
+
+            <label for="pass">Password</label>
+            <input type="password" id="pass" name="pass"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Must contain at least one number, one uppercase and lowercase letter, and at least 8 or more characters"
+                required placeholder="Enter password">
+
+            <input type="submit" value="Submit" id="submit" >
+        </form>
+    </div>
+
+    <div id="message">
+        <h3>Password must contain the following:</h3>
+        <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+        <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+        <p id="number" class="invalid">A <b>number</b></p>
+        <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+    </div>
+
+   
+</body>
+</html>
+
